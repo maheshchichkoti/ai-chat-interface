@@ -1,13 +1,11 @@
-// src/plugins/weather.ts
-
 export default {
   name: "weather",
-  pattern: /^\/weather(?:\s+(.*))?$/i, // matches `/weather` or `/weather City`
+  pattern: /^\/weather(?:\s+(.*))?$/i,
   async execute(city: string = "") {
     if (!city || city.trim() === "") {
       return {
         name: "unknown",
-        weather: "⚠️ No city provided. Try `/weather London`",
+        weather: "No city provided. Try `/weather London`",
         temp: "--",
       };
     }

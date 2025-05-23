@@ -29,11 +29,10 @@ export default function ChatInput() {
         });
       }, 1000);
     } else {
-      // ❌ No matched plugin
       add({
         sender: "assistant",
         content:
-          "🤔 Unknown command. Try `/weather Tokyo`, `/calc 7 * 6`, or `/define AI`.",
+          "Unknown command. Try `/weather Tokyo`, `/calc 7 * 6`, or `/define AI`.",
         type: "text",
       });
     }

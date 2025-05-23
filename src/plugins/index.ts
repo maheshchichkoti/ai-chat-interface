@@ -1,4 +1,3 @@
-// src/plugins/index.ts
 import weather from "./weather";
 import calc from "./calc";
 import define from "./define";

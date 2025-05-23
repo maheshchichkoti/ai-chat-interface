@@ -1,4 +1,3 @@
-// src/App.tsx
 import "./index.css";
 import Chat from "./components/Chat";
 import ChatInput from "./components/ChatInput";
